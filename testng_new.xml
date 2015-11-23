@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="freesexmatch registration(US)">
+  	<parameter name="userEmail" value="arzhan87@gmail.com" />
+  	<parameter name="browser" value="Firefox" />
+  	<parameter name="proxy" value="uk_cupid" />
+  	<parameter name="location" value="en" />
+  	<parameter name="site" value="ufi" />
+  	<parameter name="build" value="live" />
+  	<parameter name="userGender" value="male" />
+      <classes>
+      <class name="tests.web.SmokeRegistrationTS"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

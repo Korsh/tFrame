@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\OneDrive\tFrame\testng-test-pc.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">46 methods,  46 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkAgeValidate(nicky.t.nonconfirm@yomail.com, false)">checkAgeValidate(nicky.t.nonconfirm@yomail.com, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkAgeValidate(nicky.t.cancel@yomail.com, false)">checkAgeValidate(nicky.t.cancel@yomail.com, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkAgeValidate(, false)">checkAgeValidate(, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkAgeValidate(nicky.t.male+082952140527@gmail.com, true)">checkAgeValidate(nicky.t.male+082952140527@gmail.com, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkAgeValidate(nicky.t.confirm@yomail.com, false)">checkAgeValidate(nicky.t.confirm@yomail.com, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkLocationValidate( , false)">checkLocationValidate( , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkLocationValidate(, false)">checkLocationValidate(, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkLocationValidate(London, true)">checkLocationValidate(London, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345), false)">checkPasswordValidate(12345), false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(123-ab, true)">checkPasswordValidate(123-ab, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(, false)">checkPasswordValidate(, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345&amp;, false)">checkPasswordValidate(12345&, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345/, false)">checkPasswordValidate(12345/, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345\, false)">checkPasswordValidate(12345\, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345#, false)">checkPasswordValidate(12345#, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345;, false)">checkPasswordValidate(12345;, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345$, false)">checkPasswordValidate(12345$, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345=, false)">checkPasswordValidate(12345=, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345@, false)">checkPasswordValidate(12345@, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345], false)">checkPasswordValidate(12345], false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345%, false)">checkPasswordValidate(12345%, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345!, false)">checkPasswordValidate(12345!, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345|, false)">checkPasswordValidate(12345|, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345*, false)">checkPasswordValidate(12345*, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345:, false)">checkPasswordValidate(12345:, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345?, false)">checkPasswordValidate(12345?, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345{, false)">checkPasswordValidate(12345{, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345 , false)">checkPasswordValidate(12345 , false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345,, false)">checkPasswordValidate(12345,, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345`, false)">checkPasswordValidate(12345`, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345., false)">checkPasswordValidate(12345., false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345(, false)">checkPasswordValidate(12345(, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345~, false)">checkPasswordValidate(12345~, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345}, false)">checkPasswordValidate(12345}, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345[, false)">checkPasswordValidate(12345[, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345^, false)">checkPasswordValidate(12345^, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345&#039;, false)">checkPasswordValidate(12345', false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345&quot;, false)">checkPasswordValidate(12345", false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPasswordValidate(12345+, false)">checkPasswordValidate(12345+, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPostConfirmBirthday(31, 12, 1995, false)">checkPostConfirmBirthday(31, 12, 1995, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPostConfirmBirthday(10, 10, 1980, true)">checkPostConfirmBirthday(10, 10, 1980, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPostConfirmBirthday(31, 02, 1980, false)">checkPostConfirmBirthday(31, 02, 1980, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="checkPostConfirmScreennameVariant(nicky, true)">checkPostConfirmScreennameVariant(nicky, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="confirmTest(nicky.t.male+082952140527@gmail.com, true)">confirmTest(nicky.t.male+082952140527@gmail.com, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="confirmUser(nicky082952140527, 10, 09, 1980)">confirmUser(nicky082952140527, 10, 09, 1980)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.web.SmokeRegistrationTS" hash-for-method="registerTest(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true)">registerTest(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.web.SmokeRegistrationTS</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAgeValidate(nicky.t.nonconfirm@yomail.com, false)">
+                  </a> <!-- checkAgeValidate(nicky.t.nonconfirm@yomail.com, false) -->
+                  <span class="method-name">checkAgeValidate</span>
+                  <span class="parameters">(nicky.t.nonconfirm@yomail.com, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAgeValidate(nicky.t.cancel@yomail.com, false)">
+                  </a> <!-- checkAgeValidate(nicky.t.cancel@yomail.com, false) -->
+                  <span class="method-name">checkAgeValidate</span>
+                  <span class="parameters">(nicky.t.cancel@yomail.com, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAgeValidate(, false)">
+                  </a> <!-- checkAgeValidate(, false) -->
+                  <span class="method-name">checkAgeValidate</span>
+                  <span class="parameters">(, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAgeValidate(nicky.t.male+082952140527@gmail.com, true)">
+                  </a> <!-- checkAgeValidate(nicky.t.male+082952140527@gmail.com, true) -->
+                  <span class="method-name">checkAgeValidate</span>
+                  <span class="parameters">(nicky.t.male+082952140527@gmail.com, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAgeValidate(nicky.t.confirm@yomail.com, false)">
+                  </a> <!-- checkAgeValidate(nicky.t.confirm@yomail.com, false) -->
+                  <span class="method-name">checkAgeValidate</span>
+                  <span class="parameters">(nicky.t.confirm@yomail.com, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLocationValidate( , false)">
+                  </a> <!-- checkLocationValidate( , false) -->
+                  <span class="method-name">checkLocationValidate</span>
+                  <span class="parameters">( , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLocationValidate(, false)">
+                  </a> <!-- checkLocationValidate(, false) -->
+                  <span class="method-name">checkLocationValidate</span>
+                  <span class="parameters">(, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkLocationValidate(London, true)">
+                  </a> <!-- checkLocationValidate(London, true) -->
+                  <span class="method-name">checkLocationValidate</span>
+                  <span class="parameters">(London, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345), false)">
+                  </a> <!-- checkPasswordValidate(12345), false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345), false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(123-ab, true)">
+                  </a> <!-- checkPasswordValidate(123-ab, true) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(123-ab, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(, false)">
+                  </a> <!-- checkPasswordValidate(, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345&amp;, false)">
+                  </a> <!-- checkPasswordValidate(12345&, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345&, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345/, false)">
+                  </a> <!-- checkPasswordValidate(12345/, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345/, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345\, false)">
+                  </a> <!-- checkPasswordValidate(12345\, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345\, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345#, false)">
+                  </a> <!-- checkPasswordValidate(12345#, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345#, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345;, false)">
+                  </a> <!-- checkPasswordValidate(12345;, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345;, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345$, false)">
+                  </a> <!-- checkPasswordValidate(12345$, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345$, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345=, false)">
+                  </a> <!-- checkPasswordValidate(12345=, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345=, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345@, false)">
+                  </a> <!-- checkPasswordValidate(12345@, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345@, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345], false)">
+                  </a> <!-- checkPasswordValidate(12345], false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345], false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345%, false)">
+                  </a> <!-- checkPasswordValidate(12345%, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345%, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345!, false)">
+                  </a> <!-- checkPasswordValidate(12345!, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345!, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345|, false)">
+                  </a> <!-- checkPasswordValidate(12345|, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345|, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345*, false)">
+                  </a> <!-- checkPasswordValidate(12345*, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345*, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345:, false)">
+                  </a> <!-- checkPasswordValidate(12345:, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345:, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345?, false)">
+                  </a> <!-- checkPasswordValidate(12345?, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345?, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345{, false)">
+                  </a> <!-- checkPasswordValidate(12345{, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345{, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345 , false)">
+                  </a> <!-- checkPasswordValidate(12345 , false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345 , false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345,, false)">
+                  </a> <!-- checkPasswordValidate(12345,, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345,, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345`, false)">
+                  </a> <!-- checkPasswordValidate(12345`, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345`, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345., false)">
+                  </a> <!-- checkPasswordValidate(12345., false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345., false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345(, false)">
+                  </a> <!-- checkPasswordValidate(12345(, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345(, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345~, false)">
+                  </a> <!-- checkPasswordValidate(12345~, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345~, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345}, false)">
+                  </a> <!-- checkPasswordValidate(12345}, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345}, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345[, false)">
+                  </a> <!-- checkPasswordValidate(12345[, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345[, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345^, false)">
+                  </a> <!-- checkPasswordValidate(12345^, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345^, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345&#039;, false)">
+                  </a> <!-- checkPasswordValidate(12345', false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345', false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345&quot;, false)">
+                  </a> <!-- checkPasswordValidate(12345", false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345", false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordValidate(12345+, false)">
+                  </a> <!-- checkPasswordValidate(12345+, false) -->
+                  <span class="method-name">checkPasswordValidate</span>
+                  <span class="parameters">(12345+, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPostConfirmBirthday(31, 12, 1995, false)">
+                  </a> <!-- checkPostConfirmBirthday(31, 12, 1995, false) -->
+                  <span class="method-name">checkPostConfirmBirthday</span>
+                  <span class="parameters">(31, 12, 1995, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPostConfirmBirthday(10, 10, 1980, true)">
+                  </a> <!-- checkPostConfirmBirthday(10, 10, 1980, true) -->
+                  <span class="method-name">checkPostConfirmBirthday</span>
+                  <span class="parameters">(10, 10, 1980, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPostConfirmBirthday(31, 02, 1980, false)">
+                  </a> <!-- checkPostConfirmBirthday(31, 02, 1980, false) -->
+                  <span class="method-name">checkPostConfirmBirthday</span>
+                  <span class="parameters">(31, 02, 1980, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPostConfirmScreennameVariant(nicky, true)">
+                  </a> <!-- checkPostConfirmScreennameVariant(nicky, true) -->
+                  <span class="method-name">checkPostConfirmScreennameVariant</span>
+                  <span class="parameters">(nicky, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmTest(nicky.t.male+082952140527@gmail.com, true)">
+                  </a> <!-- confirmTest(nicky.t.male+082952140527@gmail.com, true) -->
+                  <span class="method-name">confirmTest</span>
+                  <span class="parameters">(nicky.t.male+082952140527@gmail.com, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmUser(nicky082952140527, 10, 09, 1980)">
+                  </a> <!-- confirmUser(nicky082952140527, 10, 09, 1980) -->
+                  <span class="method-name">confirmUser</span>
+                  <span class="parameters">(nicky082952140527, 10, 09, 1980)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true)">
+                  </a> <!-- registerTest(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true) -->
+                  <span class="method-name">registerTest</span>
+                  <span class="parameters">(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\OneDrive\tFrame\testng-test-pc.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+  &lt;parameter name=&quot;site&quot; value=&quot;ufi&quot;/&gt;
+  &lt;parameter name=&quot;userGender&quot; value=&quot;male&quot;/&gt;
+  &lt;parameter name=&quot;location&quot; value=&quot;en&quot;/&gt;
+  &lt;parameter name=&quot;proxy&quot; value=&quot;uk_cupid&quot;/&gt;
+  &lt;parameter name=&quot;usedefaultlisteners&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+  &lt;parameter name=&quot;userEmail&quot; value=&quot;arzhan87@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;build&quot; value=&quot;live&quot;/&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.web.SmokeRegistrationTS&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">confirm</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">confirmTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">funnelScreenname</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkPostConfirmBirthday</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkPostConfirmScreennameVariant</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">confirmUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">register</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">registerTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">validate</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkAgeValidate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkLocationValidate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkPasswordValidate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(46);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkPasswordValidate')
+data.setCell(0, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkPasswordValidate')
+data.setCell(1, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkPasswordValidate')
+data.setCell(2, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkAgeValidate')
+data.setCell(3, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkAgeValidate')
+data.setCell(4, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkPasswordValidate')
+data.setCell(5, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkPasswordValidate')
+data.setCell(6, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkPasswordValidate')
+data.setCell(7, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkPasswordValidate')
+data.setCell(8, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkAgeValidate')
+data.setCell(9, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkPasswordValidate')
+data.setCell(10, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkPostConfirmBirthday')
+data.setCell(11, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkPasswordValidate')
+data.setCell(12, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkPasswordValidate')
+data.setCell(13, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkLocationValidate')
+data.setCell(14, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkPasswordValidate')
+data.setCell(15, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkAgeValidate')
+data.setCell(16, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkPasswordValidate')
+data.setCell(17, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkPasswordValidate')
+data.setCell(18, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkPasswordValidate')
+data.setCell(19, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'checkPasswordValidate')
+data.setCell(20, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkPasswordValidate')
+data.setCell(21, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkPostConfirmScreennameVariant')
+data.setCell(22, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'checkAgeValidate')
+data.setCell(23, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(23, 3, 1);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'checkPostConfirmBirthday')
+data.setCell(24, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'confirmTest')
+data.setCell(25, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'checkPasswordValidate')
+data.setCell(26, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'checkPasswordValidate')
+data.setCell(27, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkPasswordValidate')
+data.setCell(28, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'checkPasswordValidate')
+data.setCell(29, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'checkLocationValidate')
+data.setCell(30, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'checkLocationValidate')
+data.setCell(31, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'confirmUser')
+data.setCell(32, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'checkPasswordValidate')
+data.setCell(33, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'registerTest')
+data.setCell(34, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'checkPasswordValidate')
+data.setCell(35, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkPostConfirmBirthday')
+data.setCell(36, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkPasswordValidate')
+data.setCell(37, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'checkPasswordValidate')
+data.setCell(38, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkPasswordValidate')
+data.setCell(39, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'checkPasswordValidate')
+data.setCell(40, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'checkPasswordValidate')
+data.setCell(41, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'checkPasswordValidate')
+data.setCell(42, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'checkPasswordValidate')
+data.setCell(43, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'checkPasswordValidate')
+data.setCell(44, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'checkPasswordValidate')
+data.setCell(45, 2, 'tests.web.SmokeRegistrationTS')
+data.setCell(45, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.web.SmokeRegistrationTS</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">checkPostConfirmScreenname</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.web.SmokeRegistrationTS</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInit(ufi, live, Firefox, uk_cupid, male, en)</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">checkAgeValidate(nicky.t.male+082952140527@gmail.com, true)</span>
+                <span class="method-start">368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAgeValidate(nicky.t.confirm@yomail.com, false)</span>
+                <span class="method-start">369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAgeValidate(nicky.t.nonconfirm@yomail.com, false)</span>
+                <span class="method-start">370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAgeValidate(nicky.t.cancel@yomail.com, false)</span>
+                <span class="method-start">371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkAgeValidate(, false)</span>
+                <span class="method-start">372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLocationValidate(London, true)</span>
+                <span class="method-start">375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLocationValidate(, false)</span>
+                <span class="method-start">376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkLocationValidate( , false)</span>
+                <span class="method-start">377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(123-ab, true)</span>
+                <span class="method-start">381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(, false)</span>
+                <span class="method-start">382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345`, false)</span>
+                <span class="method-start">383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345@, false)</span>
+                <span class="method-start">383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345#, false)</span>
+                <span class="method-start">384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345$, false)</span>
+                <span class="method-start">385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345%, false)</span>
+                <span class="method-start">386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345^, false)</span>
+                <span class="method-start">387 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345&, false)</span>
+                <span class="method-start">388 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345*, false)</span>
+                <span class="method-start">394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345 , false)</span>
+                <span class="method-start">394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345(, false)</span>
+                <span class="method-start">395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345), false)</span>
+                <span class="method-start">396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345+, false)</span>
+                <span class="method-start">397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345=, false)</span>
+                <span class="method-start">398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345{, false)</span>
+                <span class="method-start">399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345}, false)</span>
+                <span class="method-start">402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345[, false)</span>
+                <span class="method-start">403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345], false)</span>
+                <span class="method-start">405 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345\, false)</span>
+                <span class="method-start">409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345|, false)</span>
+                <span class="method-start">410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345/, false)</span>
+                <span class="method-start">411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345?, false)</span>
+                <span class="method-start">411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345., false)</span>
+                <span class="method-start">412 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345,, false)</span>
+                <span class="method-start">413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345~, false)</span>
+                <span class="method-start">414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345!, false)</span>
+                <span class="method-start">414 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345", false)</span>
+                <span class="method-start">415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345', false)</span>
+                <span class="method-start">416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345;, false)</span>
+                <span class="method-start">416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordValidate(12345:, false)</span>
+                <span class="method-start">417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerTest(24, London, male, nicky.t.male+082952140527@gmail.com, nicky082952140527, 123-ab, true)</span>
+                <span class="method-start">420 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmTest(nicky.t.male+082952140527@gmail.com, true)</span>
+                <span class="method-start">423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPostConfirmBirthday(31, 02, 1980, false)</span>
+                <span class="method-start">425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPostConfirmBirthday(31, 12, 1995, false)</span>
+                <span class="method-start">426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPostConfirmBirthday(10, 10, 1980, true)</span>
+                <span class="method-start">426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPostConfirmScreennameVariant(nicky, true)</span>
+                <span class="method-start">429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmUser(nicky082952140527, 10, 09, 1980)</span>
+                <span class="method-start">432 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

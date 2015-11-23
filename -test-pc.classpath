@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/selenium/selenium-server-standalone-2.31.0.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/JSErrorCollector/JSErrorCollector-0.2.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/logback/logback-classic-1.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/logback/logback-core-1.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/MonteScreenRecorder/MonteScreenRecorder.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/mysql/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/selenium/selenium-java-2.24.1.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/slf4j/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/sikuli/sikuli-script.jar"/>
+	<classpathentry kind="lib" path="D:/Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library.jar"/>
+	<classpathentry kind="lib" path="D:/Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/reportng/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/SkyDrive/tFrame/lib/reportng/reportng-1.1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

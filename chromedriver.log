@@ -1,0 +1,83 @@
+[0.019][INFO]:      ChromeDriver 23.0.1240.0 D:\Google Drive\tFrame\lib\driver\chromedriver.exe
+[0.693][FINE]:      Initializing session with capabilities {
+   "proxy": {
+      "autodetect": false,
+      "class": "org.openqa.selenium.Proxy",
+      "ftpProxy": "localhost:80",
+      "hCode": 22901724,
+      "httpProxy": "localhost:80",
+      "httpsProxy": null,
+      "noProxy": null,
+      "proxyAutoconfigUrl": null,
+      "proxyType": "MANUAL",
+      "socksPassword": null,
+      "socksProxy": null,
+      "socksUsername": null,
+      "sslProxy": "localhost:80"
+   }
+}
+
+[0.693][INFO]:      Unrecognized proxy capability: hCode
+[0.693][INFO]:      Unrecognized proxy capability: httpsProxy
+[0.693][INFO]:      Unrecognized proxy capability: socksPassword
+[0.693][INFO]:      Unrecognized proxy capability: socksProxy
+[0.694][INFO]:      Unrecognized proxy capability: socksUsername
+[0.717][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors --proxy-server=ftp=localhost:80;http=localhost:80;https=localhost:80 about:blank
+[11.182][INFO]:     Connected to Chrome successfully. Version: 26.0.1410.43
+[11.285][FINE]:     Command received (/session/58e9fddd688ca631fe86a91f3efd2c9c)
+[11.285][FINE]:     Command finished (/session/58e9fddd688ca631fe86a91f3efd2c9c) with response {
+   "sessionId": "58e9fddd688ca631fe86a91f3efd2c9c",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "26.0.1410.43",
+      "webStorageEnabled": true
+   }
+}
+
+[11.310][FINE]:     Command received (/session/58e9fddd688ca631fe86a91f3efd2c9c/timeouts/implicit_wait) with params {
+   "ms": 5000
+}
+
+[11.310][FINER]:    Waiting for all views to stop loading...
+[11.311][FINER]:    Done waiting for all views to stop loading
+[11.339][FINER]:    Waiting for all views to stop loading...
+[11.346][FINER]:    Done waiting for all views to stop loading
+[11.346][FINE]:     Command finished (/session/58e9fddd688ca631fe86a91f3efd2c9c/timeouts/implicit_wait) with response {
+   "sessionId": "58e9fddd688ca631fe86a91f3efd2c9c",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[11.356][FINE]:     Command received (/session/58e9fddd688ca631fe86a91f3efd2c9c/url) with params {
+   "url": "http://www.upforit.com/admin/find.php"
+}
+
+[11.356][FINER]:    Waiting for all views to stop loading...
+[11.368][FINER]:    Done waiting for all views to stop loading
+[13.293][FINER]:    Waiting for all views to stop loading...
+[13.294][FINER]:    Done waiting for all views to stop loading
+[13.294][FINE]:     Command finished (/session/58e9fddd688ca631fe86a91f3efd2c9c/url) with response {
+   "sessionId": "58e9fddd688ca631fe86a91f3efd2c9c",
+   "status": 0,
+   "value": {
+
+   }
+}
+

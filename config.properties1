@@ -1,0 +1,5 @@
+#Thu Mar 28 16:03:08 EET 2013
+dbpassword=password
+database=localhost
+proxy.uk=p-uk1.bisciencs.com\:80
+dbuser=mkyong

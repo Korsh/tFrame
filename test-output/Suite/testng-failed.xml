@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="site" value="ufi"/>
+  <parameter name="userGender" value="male"/>
+  <parameter name="location" value="en"/>
+  <parameter name="usedefaultlisteners" value="false"/>
+  <parameter name="proxy" value="uk_cupid"/>
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="userEmail" value="arzhan87@gmail.com"/>
+  <parameter name="build" value="live"/>
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="tests.web.SmokeRegistrationTS">
+        <methods>
+          <include name="confirmUser"/>
+          <include name="checkPostConfirmScreennameVariant"/>
+          <include name="checkPasswordValidate"/>
+          <include name="init"/>
+          <include name="confirmTest"/>
+          <include name="checkLocationValidate"/>
+          <include name="checkAgeValidate"/>
+          <include name="checkPostConfirmBirthday"/>
+          <include name="testInit"/>
+          <include name="registerTest"/>
+        </methods>
+      </class> <!-- tests.web.SmokeRegistrationTS -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

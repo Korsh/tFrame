@@ -1,0 +1,54 @@
+<project name="tFrame" basedir="." default="regression">
+	<property name="src.dir" location="${basedir}/src"/>
+	<property name="lib.dir" location="${basedir}/lib"/>
+	<property name="exec.dir" location="${basedir}/exec"/>
+	<property name="exec.resources.dir" location="${exec.dir}/resources"/>
+	<property name="functional.base.dir" location="${basedir}/../../"/>
+	<property name="reports.dir" location="${exec.dir}/reports"/>
+	<property name="failure.dir" location="${exec.dir}/reports/xml"/>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="../../Programm files/Eclipse/plugins/org.testng.eclipse_6.8.6.20130607_0745/lib/testng.jar"/>
+    </path>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="../../Programm files/Eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+        <pathelement location="../../Programm files/Eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+
+    <path id="tFrame.classpath">
+	        <pathelement location="target/classes"/>
+	        <path refid="TestNG.libraryclasspath"/>
+	        <path refid="JUnit 4.libraryclasspath"/>
+	        <pathelement location="lib/selenium/selenium-server-standalone-2.31.0.jar"/>
+	        <pathelement location="lib/JSErrorCollector/JSErrorCollector-0.2.jar"/>
+	        <pathelement location="lib/logback/logback-classic-1.0.7.jar"/>
+	        <pathelement location="lib/logback/logback-core-1.0.7.jar"/>
+	        <pathelement location="lib/MonteScreenRecorder/MonteScreenRecorder.jar"/>
+	        <pathelement location="lib/mysql/mysql-connector-java-5.1.6.jar"/>
+	        <pathelement location="lib/selenium/selenium-java-2.24.1.jar"/>
+	        <pathelement location="lib/slf4j/slf4j-api-1.7.2.jar"/>
+	        <pathelement location="lib/sikuli/sikuli-script.jar"/>
+	        <pathelement location="../../Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library.jar"/>
+	        <pathelement location="../../Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library-srcs.jar"/>
+	        <pathelement location="lib/reportng/velocity-dep-1.4.jar"/>
+	        <pathelement location="lib/reportng/reportng-1.1.4.jar"/>
+		<fileset dir="${lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement location="${exec.dir}"/>
+	</path>
+
+	<taskdef resource="testngtasks" classpath="${lib.dir}/testng/testng.jar"/>
+	
+	<target name="regression">
+				<testng classpathref="tFrame.classpath"
+		            outputdir="${reports.dir}"
+		            haltonfailure="true"
+		            useDefaultListeners="false"
+					workingDir=""
+		            listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+		      <xmlfileset dir="${basedir}" includes="testng.xml"/>
+		      <sysproperty key="org.uncommons.reportng.escape-output" value="false" />			  
+		      <sysproperty key="org.uncommons.reportng.title" value="My Test Report"/>
+		    </testng>
+	</target>
+</project>

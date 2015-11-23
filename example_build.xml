@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="tFrame">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="../../Programm files/Eclipse/plugins/org.testng.eclipse_6.8.6.20130607_0745/lib/testng.jar"/>
+    </path>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="../../Programm files/Eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+        <pathelement location="../../Programm files/Eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="Maven Dependencies.libraryclasspath"/>
+    <path id="tFrame.classpath">
+        <pathelement location="target/classes"/>
+        <path refid="TestNG.libraryclasspath"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="lib/selenium/selenium-server-standalone-2.31.0.jar"/>
+        <pathelement location="lib/JSErrorCollector/JSErrorCollector-0.2.jar"/>
+        <pathelement location="lib/logback/logback-classic-1.0.7.jar"/>
+        <pathelement location="lib/logback/logback-core-1.0.7.jar"/>
+        <pathelement location="lib/MonteScreenRecorder/MonteScreenRecorder.jar"/>
+        <pathelement location="lib/mysql/mysql-connector-java-5.1.6.jar"/>
+        <pathelement location="lib/selenium/selenium-java-2.24.1.jar"/>
+        <pathelement location="lib/slf4j/slf4j-api-1.7.2.jar"/>
+        <pathelement location="lib/sikuli/sikuli-script.jar"/>
+        <pathelement location="../../Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library.jar"/>
+        <pathelement location="../../Programm files/AndroidSDK/extras/google/webdriver/android_webdriver_library-srcs.jar"/>
+        <pathelement location="lib/reportng/velocity-dep-1.4.jar"/>
+        <pathelement location="lib/reportng/reportng-1.1.4.jar"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="tFrame.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
